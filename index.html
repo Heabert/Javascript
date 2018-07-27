@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+
+		<script>
+				function greet(){
+			var name = prompt("please enter your name"); 
+			document.getElementById("<h2>Hello " + name + "! <br />How are you today?</h2>");
+		}
+
+
+
+			function add(){
+				var FirstNumber = document.getElementById("FirstNumber").value;
+				var SecondNumber = document.getElementById("SecondNumber").value;
+
+			document.getElementById("results").innerHTML = parseInt(FirstNumber) + parseInt(SecondNumber);
+		}
+		
+		function subtract(){
+			 var FirstNumber = document.getElementById("FirstNumber").value;
+			 var SecondNumber = document.getElementById("SecondNumber").value;
+
+			 document.getElementById("results").innerHTML = parseInt(FirstNumber) - parseInt(SecondNumber);
+		}
+
+		function multiply(){
+			 var FirstNumber = document.getElementById("FirstNumber").value;
+			 var SecondNumber = document.getElementById("SecondNumber").value;
+
+			document.getElementById("results").innerHTML = parseInt(FirstNumber) * parseInt(SecondNumber);
+		}
+
+		function divide(){
+			 var FirstNumber = document.getElementById("FirstNumber").value;
+			 var SecondNumber = document.getElementById("SecondNumber").value;
+
+			document.getElementById("results").innerHTML = parseInt(FirstNumber) / parseInt(SecondNumber);
+		}
+		function add (a, b){
+			alert(a+b)
+			 
+		}
+
+	
+
+
+
+		</script>
+		
+		
+</head>
+	
+
+
+
+
+<body>
+
+		<h2 id="hello">Who are you?</h2>
+			<button onclick="greet()">Enter your name</button>
+			<br>
+			<br>
+					
+
+			<input type="text" id="FirstNumber" placeholder="firstnumber" >
+			<input type="text" id="SecondNumber" placeholder="secondnumber" >	
+			<br>
+			<br>
+			<button onclick="add()">Add</button> 
+			<button onclick="subtract()">Subtract</button> 
+			<button onclick="multiply()">multiply</button> 
+			<button onclick="divide()">divide</button> 
+
+			
+				
+				<h1 id="results"></h1>
+
+			
+<button onclick="add(50,10)">add</button>
+
+<h1 id="result"></h1>
+
+
+
+</body>
+</html>
